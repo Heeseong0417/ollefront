@@ -73,7 +73,7 @@ export default function Home() {
 <h1 className="main-grid-main-title">올레마켓 서비스 안내</h1>
 <main className="main-grid-form">
 <div className="main-grid-1">
-  <SquareTitleButton title={"올레마켓 접속자 통계"} img={chart}link={"/"}/>
+  <SquareTitleButton title={"올레마켓 접속자 통계"} img={chart}link={"https://id.photonengine.com/ko-kr/account/signin?returnUrl=https%3A%2F%2Fwww.photonengine.com%2Fko-kr"}/>
 </div>
 <div className="main-grid-2">
 <SquareTitleButton title={"스마트 주차"} img={car}link={"/link/smartparking"}/>
