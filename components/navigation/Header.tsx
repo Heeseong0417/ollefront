@@ -33,7 +33,7 @@ useEffect(() => {
     if(token===undefined){
         console.log("로그인이 만료되었습니다. 다시로그인해주세요!")
     }else{
-        console.log(token)
+        //console.log(token)
         if (token.accessToken?.length>0) {
             setlogin_state(true);
         } else {
