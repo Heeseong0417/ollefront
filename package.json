@@ -2,7 +2,6 @@
   "name": "olle_market_metaverse_platform",
   "version": "0.0.2",
   "private": true,
-  "proxy": "http://http://valiantdata.iptime.org:8080",
   "port": "3001",
   "scripts": {
     "dev": "next dev -p 3001",
