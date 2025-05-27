@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   //output: 'export',
+  output:"standalone",
   images: {
     unoptimized: true, 
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
