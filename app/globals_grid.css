@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.main-grid-form{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+  "a a d d"
+  "b c d d";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Optional: space between grid items */
+  margin: 0 auto;
+}
+.main-grid-container{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  overflow:hidden;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+}
+.main-grid-1{
+  grid-area: a;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.main-grid-2{
+  grid-area: b;
+width: 100%;
+box-sizing: border-box;
+}
+.main-grid-3{
+  grid-area: c;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-grid-4{
+  grid-area: d;
+  padding-left: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-grid-title{
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: left;
+  white-space: nowrap; 
+}
+.main-grid-titlelg{
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+  white-space: nowrap; 
+}
+.main-gird-main-title-center{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.main-grid-subtitle{
+  width: 100%;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-align: right;
+  white-space: nowrap; 
+
+  justify-content: center;
+  
+}
+.main-grid-button{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+
+}
+.main-grid-main-title{
+text-align: left;
+font-size: 1.5rem;
+font-weight: 600;
+width: 100%;
+padding-bottom: 1rem;
+}
+.filter-grayscale{
+  filter:grayscale(30%) brightness(75%);
+}
+.grid-image{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  max-height: 10rem;
+  object-fit: cover;
+}
+
+.grid-image2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 10rem;
+  object-fit: cover;
+
+}
+.grid-image3{
+
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+  max-height: 30rem;
+  object-fit: cover;
+}
+
+/**공지사항 작은화면**/
+.main-grid-notice-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  overflow-y: hidden;
+  padding:1rem;
+
+}
+.main-grid-notice-title{
+  padding:1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #444444;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; 
+}
+.main-grid-notice-subtitle{
+  font-size: 0.8rem;
+  color: #444444;
+}
+
+.main-grid-notice-plus{
+  width: 1.2rem;
+  height: 1.2rem;
+  filter: invert(21%) sepia(15%) saturate(6%) hue-rotate(314deg) brightness(97%) contrast(80%);
+}
+.main-grid-notice-form-list{
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+  overflow: hidden; /* 넘치는 부분을 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 생략 */
+  color: #585858;
+  font-weight: 500;
+  font-size:1rem; 
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/************************gridbutton**********************/
+.button-grid-form{
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem; /* Optional: space between grid items */
+    margin: 0 auto;
+
+}
+
+.button-grid-container{
+  width:100%;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.7rem;
+}
+
+.button-grid-white-img-title{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: white;
+font-weight: 600;
+font-size: 2.5rem;
+position: absolute;
+margin:0 auto;
+opacity: 1;
+
+}
+
+/************************grid view**********************/
+.main-grid-form-3views{
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1.5rem; /* Optional: space between grid items */
+ 
+
+}
+@media (max-width: 1000px) {
+  .main-grid-form{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d";
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px; /* Optional: space between grid items */
+    margin: 0 auto;
+  }
+  .main-grid-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+  }
+
+  .main-grid-title{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    white-space: nowrap; 
+  }
+  .main-grid-subtitle{
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.6rem;
+
+    text-align: left;
+    white-space: nowrap; 
+
+    justify-content: center;
+    
+  }.main-grid-button{
+    
+  }  .main-grid-notice-plus{
+    width: 1rem;
+    height: 1rem;
+  }  
+  .main-grid-notice-form-list{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+flex-direction: column;
+    color: #585858;
+    font-weight: 500;
+    font-size:1rem; 
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .main-grid-notice-title{
+    font-size: 1rem;
+
+  }
+  .main-grid-notice-subtitle{
+    font-size: 0.7rem;
+
+  }
+  .main-grid-main-title{
+    padding:3%;
+  }
+  /************************gridbutton**********************/
+.button-grid-form{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem; /* Optional: space between grid items */
+
+}
+.button-grid-container{
+width:100%;
+height: 100%;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+
+box-sizing: border-box;
+}
+.main-grid-4{
+  margin-left: 0%;
+  padding:5%;
+}
+.grid-image2{
+  min-height: 10rem;
+}
+.grid-image2{
+  min-height: 10rem;
+}
+.grid-image3{
+  max-height: 10rem;
+}
+.button-grid-white-img-title{
+  font-size: 1.5rem;
+}
+.main-gird-main-title-center{
+  padding:3%;
+}
+.main-grid-form-3views{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}
+

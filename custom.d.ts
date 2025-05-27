@@ -1,0 +1,10 @@
+declare module "*.jpg";
+declare module "*.png";
+declare module "*.jpeg";
+declare module "*.gif";
+declare module "*.mp4";
+declare module "*.js";
+declare module "*.ts";
+declare module "*.jsx";
+declare module "*.tsx";
+declare module "*.apk";

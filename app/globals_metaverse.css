@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.metamainform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.metatitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  font-weight: 600;
+  font-size: 2rem;
+  color:white;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: nowrap;
+  margin: 0 auto;
+}
+
+
+.metasubtitle{
+  
+  text-align: center; 
+  font-weight: 300;
+  font-size: 1.1rem;
+  color:white;
+  opacity: 0.9;
+  text-wrap: nowrap;
+}
+.mteabutton{
+  margin-top: 2rem;
+  border-radius: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0.9;
+  font-weight: 600;
+  border: 1px solid white;
+
+}
+.mteabutton:hover{
+  background-color: white;
+  color:#444444;
+}
+
+.metaflex{
+  display: flex;
+  justify-content: space-around;
+  padding:3rem;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+
+}
+.matacontainer{
+ 
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.metalistbutton{
+  padding:3rem;
+  width: 100%;
+  height: 100%;
+  max-width: 15rem;
+}
+
+.mainlisttitle{
+  padding-top: 2rem;
+font-weight: 400;
+font-size: 1.3rem;
+color: #444444;
+text-wrap: nowrap;
+}
+
+.mainlisttitle>p{
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.metaform{
+  margin:5%;
+ width: 90%;
+ height: 90%;
+ padding:1%;
+
+}
+
+@media (max-width: 1000px) {
+ .metatitle{
+  font-size: 1.2rem;
+ }.metasubtitle{
+  font-size:0.8rem;
+ }.mteabutton{
+  font-size: 1rem;
+ }
+
+ .metaflex{
+  flex-direction: column;
+ }
+ .metaform{
+  width: 100%;
+  margin:0;
+ }
+}
+
